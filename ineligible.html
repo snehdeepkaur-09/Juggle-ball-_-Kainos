@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Sorry, You can't juggle less than 3 balls.
+      </h1>
+
+      <p>
+        How to resolve?<br>
+        1. Go back.<br>
+        2. Select option more than 2 balls.<br>
+      </p>
+
+      <p>
+        Read more <a href="/path/of/page">about this topic</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}
